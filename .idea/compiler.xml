@@ -8,6 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spark_core" />
         <module name="spark_core_project" />
+        <module name="spark_sql" />
+        <module name="spark_sql_pro" />
+        <module name="spark_streaming" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

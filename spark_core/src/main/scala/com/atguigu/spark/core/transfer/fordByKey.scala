@@ -12,11 +12,14 @@ object fordByKey {
     val rdd3 = sc.parallelize(List(("zhangsna",2), ("lisi",6), ("zhangsna",5), ("wangwu",7),("lisi",10)),2)
     val rdd4 = sc.parallelize(List((1, 9), (9, 6),(2, 4), (3, 3), (4, 1)),2)
 
-    rdd.sortByKey(false).collect.foreach(println)
+    /*rdd.sortByKey(false).collect.foreach(println)
     println("************************")
     rdd.mapValues("@" + _).collect.foreach(println)
     println("&&&&&&&&&&&&&&&&&&&&&&")
-   rdd.cogroup(rdd4).collect.foreach(println)
+   rdd.cogroup(rdd4).collect.foreach(println)*/
+
+
+
     sc.stop()
   }
 }

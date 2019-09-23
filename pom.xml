@@ -11,6 +11,9 @@
     <modules>
         <module>spark_core</module>
         <module>spark_core_project</module>
+        <module>spark_sql</module>
+        <module>spark_sql_pro</module>
+        <module>spark_streaming</module>
     </modules>
     <dependencies>
         <dependency>

@@ -35,10 +35,10 @@ object ProjectApp {
         })
 
 
-       userVisitActionRDD.foreach( obj => println((obj.user_id, obj.date, obj.search_keyword)))
+       //userVisitActionRDD.foreach( obj => println((obj.user_id, obj.date, obj.search_keyword)))
 
 
-        println(userVisitActionRDD.count)
+        //println(userVisitActionRDD.count)
         // 需求1: top10的热门品类
        /* val top10CategoryCountInfo: List[CategoryCountInfo] = CategoryTop10App.statCategoryTop10(sc, userVisitActionRDD)
         // 需求2:
@@ -46,6 +46,8 @@ object ProjectApp {
         println("--------")
         CategorySessionTopApp.statCategoryTop10Session_2(sc, userVisitActionRDD, top10CategoryCountInfo)
        */
+
+        PageConversionApp.calcPageConversion(sc,userVisitActionRDD,"1,2,3,4,5,6,7")
         sc.stop()
     }
 }
